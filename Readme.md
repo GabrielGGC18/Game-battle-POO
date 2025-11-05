@@ -6,7 +6,7 @@
 **Classes e Objetos**
 
     -MethodAbstact  -Factory
-    -Builder
+    -Builder        -observer
     -Singleton
     -Delegate
     -Notification
@@ -15,5 +15,6 @@
 Não pode ter um objeto inconsistente!**
     
     
+
 
 
