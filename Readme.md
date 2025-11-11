@@ -18,6 +18,16 @@ Não pode ter um objeto inconsistente!**
     
     
 
+# O Tema Escolhido do Projeto
+
+**Um Game em Python**
+
+*Nome: * **Battle Hero Simulator**
+
+É um jogo contruído na linguagem em python com o intuito de luta entre os personagens
+
+### V1 Goku vs Naruto
+
 
 
 
