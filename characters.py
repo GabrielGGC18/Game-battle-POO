@@ -10,7 +10,7 @@ class Character(ABC):
     def __init__(self, name, img, power, life, strategy: MoveStrategy):
         self.name = name
         self.original_image = pygame.image.load(img)
-        # Redimensionar para 80x80 pixels
+       
         self.image = pygame.transform.scale(self.original_image, (80, 80))
         self.power = power
         self.life = life

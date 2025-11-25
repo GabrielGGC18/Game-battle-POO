@@ -3,19 +3,18 @@ import tkinter as tk
 from facade import GameFacade
 
 def start_game():
-    root.destroy()  # fecha o menu Tkinter
+    root.destroy()  
     pygame.init()
     screen = pygame.display.set_mode((GameFacade.SCREEN_WIDTH, GameFacade.SCREEN_HEIGHT))
     game = GameFacade(screen)
-    game.run()  # mantém o loop do jogo rodando
-    root.quit()  # fecha a aplicação após o jogo
-
+    game.run()  
+    root.quit()  
 def exit_game():
     root.quit()
 
 root = tk.Tk()
 root.title("Menu do Jogo - Gabriel")
-root.geometry("400x200")  # Janela com tamanho fixo
+root.geometry("400x200")  
 
 frame = tk.Frame(root, padx=20, pady=20)
 frame.pack()

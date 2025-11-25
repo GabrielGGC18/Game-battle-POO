@@ -52,17 +52,17 @@ class GameFacade:
         self.goku = CharacterFactory.create("goku", NormalMove())
         self.naruto = CharacterFactory.create("naruto", FastMove())
 
-        # HUD
+        
         self.hud = HUD(surface)
 
-        # Posições iniciais - frente a frente para combate (posições horizontais fixas)
+        
         self.goku_x = 80
         self.naruto_x = 600
         self.goku_y = self.SCREEN_HEIGHT - self.goku.image.get_height() - 10
         self.naruto_y = self.SCREEN_HEIGHT - self.naruto.image.get_height() - 10
         self.score = 0
         
-        # Controle de ataques especiais (para evitar múltiplos ataques simultâneos)
+        
         self.goku_attack_cooldown = 0
         self.naruto_attack_cooldown = 0
 
@@ -82,7 +82,7 @@ class GameFacade:
 
             keys = pygame.key.get_pressed()
             
-            # Movimento do Goku (Setas)
+    
             if keys[pygame.K_UP]: 
                 self.goku_y -= 10
             if keys[pygame.K_DOWN]: 
@@ -92,7 +92,7 @@ class GameFacade:
             if keys[pygame.K_RIGHT]: 
                 self.goku_x += 10
             
-            # Movimento do Naruto (W, A, S, D)
+          
             if keys[pygame.K_w]: 
                 self.naruto_y -= 10
             if keys[pygame.K_s]: 
@@ -102,18 +102,18 @@ class GameFacade:
             if keys[pygame.K_d]: 
                 self.naruto_x += 10
             
-            # Limite de movimento para ambos não saírem da tela
+            # Limitação nos movimentos dos rapeizes
             self.goku_x = max(0, min(self.goku_x, self.SCREEN_WIDTH - self.goku.image.get_width()))
             self.goku_y = max(0, min(self.goku_y, self.SCREEN_HEIGHT - self.goku.image.get_height() - 10))
             
             self.naruto_x = max(0, min(self.naruto_x, self.SCREEN_WIDTH - self.naruto.image.get_width()))
             self.naruto_y = max(0, min(self.naruto_y, self.SCREEN_HEIGHT - self.naruto.image.get_height() - 10))
             
-            # Poder especial do Goku - Tecla Z (com cooldown)
+            
             if keys[pygame.K_z] and self.goku_attack_cooldown == 0:
                 self.goku.special_move()
-                self.goku_attack_cooldown = 30  # 30 frames de cooldown
-                # Dano ao Naruto
+                self.goku_attack_cooldown = 30  
+                # Pancada ao Naruto
                 self.naruto.life -= 20
                 self.events.notify(f"Goku usou Kamehameha! Naruto recebeu 20 de dano!")
             
@@ -131,13 +131,13 @@ class GameFacade:
             if self.naruto_attack_cooldown > 0:
                 self.naruto_attack_cooldown -= 1
             
-            # Decrementar timer dos ataques especiais
+            # Decrementar timer dos ataques especiais(SUPERPOWERSSS)
             if self.goku.special_move_timer > 0:
                 self.goku.special_move_timer -= 1
             if self.naruto.special_move_timer > 0:
                 self.naruto.special_move_timer -= 1
             
-            # Verificar se alguém morreu
+            # Verificar se alguém morreu(faleceu :(  )
             if self.goku.life <= 0:
                 self.events.notify("Naruto venceu!")
                 self.score += 100
@@ -147,7 +147,7 @@ class GameFacade:
                 self.score += 100
                 break
 
-            # Renderização
+            # Renderização(IHU)
             self.surface.blit(self.bg, (0, 0))
             self.surface.blit(self.goku.image, (self.goku_x, self.goku_y))
             self.surface.blit(self.naruto.image, (self.naruto_x, self.naruto_y))
