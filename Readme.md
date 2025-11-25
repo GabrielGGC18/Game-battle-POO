@@ -23,7 +23,7 @@ Não pode ter um objeto inconsistente!**
 
 *Nome:* 
 
-**Battle Hero Simulator**
+**Battle  Simulator**
 
 É um jogo construído na linguagem Python com o intuito de simular uma batalha entre personagens.
 
@@ -79,3 +79,4 @@ O projeto está organizado em módulos, cada um responsável por uma parte da l�
    git clone https://github.com/GabrielGGC18/Game-battle-POO.git
    cd Game-battle-POO
 ****
+
