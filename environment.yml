@@ -1,0 +1,12 @@
+name: poo-jogo-gabriel
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pygame::pygame=2.5.2
+  - pillow=10.0.0
+  - pip
+  - pip:
+    - pygame>=2.1.0
+    - pillow>=9.0.0

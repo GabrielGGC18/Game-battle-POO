@@ -2,7 +2,7 @@
 
 ## 📋 Requisitos do Sistema
 
-- Python 3.7+
+- Python 3.10+ (ou conda/miniconda instalado)
 - pip (gerenciador de pacotes Python)
 - Sistema operacional: Windows, macOS ou Linux
 
@@ -10,29 +10,53 @@
 
 ## 🚀 Instalação das Dependências
 
-### 1. **Clone o repositório** (se ainda não fez)
+### **Opção 1: Com pip e venv (Recomendado)**
+
+#### 1. Clone o repositório
 ```bash
 git clone https://github.com/GabrielGGC18/POO-Aulas-Aplica-o.git
 cd POO-Aulas-Aplica-o
 ```
 
-### 2. **Crie um ambiente virtual** (recomendado)
+#### 2. Crie um ambiente virtual
 
-#### No Linux/macOS:
+**No Linux/macOS:**
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-#### No Windows:
+**No Windows:**
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### 3. **Instale as dependências**
+#### 3. Instale as dependências
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+### **Opção 2: Com Conda (Para Produção)**
+
+Se você tem Conda/Miniconda instalado:
+
+#### 1. Clone o repositório
+```bash
+git clone https://github.com/GabrielGGC18/POO-Aulas-Aplica-o.git
+cd POO-Aulas-Aplica-o
+```
+
+#### 2. Crie o ambiente a partir do arquivo `environment.yml`
+```bash
+conda env create -f environment.yml
+```
+
+#### 3. Ative o ambiente
+```bash
+conda activate poo-jogo-gabriel
 ```
 
 ---
@@ -41,20 +65,23 @@ pip install -r requirements.txt
 
 | Pacote | Versão | Propósito |
 |--------|--------|----------|
+| **Python** | 3.10+ | Linguagem de programação |
 | **pygame** | ≥2.1.0 | Engine gráfica para o jogo |
-| **pillow** | ≥9.0.0 | Processamento de imagens (usado pelo pygame) |
+| **pillow** | ≥9.0.0 | Processamento de imagens |
 
 ---
 
 ## ▶️ Como Executar o Jogo
 
-### Linux/macOS:
+### **Com ambiente virtual pip:**
 ```bash
-python3 main.py
+python3 main.py  # Linux/macOS
+python main.py   # Windows
 ```
 
-### Windows:
+### **Com Conda:**
 ```bash
+conda activate poo-jogo-gabriel
 python main.py
 ```
 
@@ -92,7 +119,9 @@ POO-Aulas-Aplica-o/
 ├── strategies.py                # Padrão Strategy (movimentos)
 ├── events.py                    # Padrão Observer (sistema de eventos)
 ├── game_manager.py              # Padrão Singleton (gerenciador do jogo)
-├── requirements.txt             # Dependências do projeto
+├── requirements.txt             # Dependências pip
+├── environment.yml              # Dependências conda (produção)
+├── .gitignore                   # Arquivos a ignorar no git
 ├── SETUP.md                     # Este arquivo
 ├── ANALISE_POO_PATTERNS.md      # Análise de padrões de projeto
 ├── FLUXO_EXECUCAO_PATTERNS.md   # Fluxo de execução
@@ -108,9 +137,14 @@ POO-Aulas-Aplica-o/
 ## 🐛 Solução de Problemas
 
 ### Erro: `ModuleNotFoundError: No module named 'pygame'`
-**Solução**:
+**Solução com pip:**
 ```bash
 pip install pygame
+```
+
+**Solução com conda:**
+```bash
+conda install pygame
 ```
 
 ### Erro: `FileNotFoundError: assets/cenario.jpg`
@@ -124,10 +158,15 @@ python3 main.py
 **Solução**: Verifique se todas as dependências estão instaladas
 ```bash
 pip install -r requirements.txt
+# ou
+conda env update -f environment.yml
 ```
 
 ### Jogo muito lento
 **Solução**: Feche outros programas e tente novamente. O jogo roda a 60 FPS.
+
+### Conda não encontrado
+**Solução**: Instale Miniconda de https://docs.conda.io/en/latest/miniconda.html
 
 ---
 
