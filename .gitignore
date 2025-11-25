@@ -1,0 +1,48 @@
+# Ambientes Virtuais Python
+venv/
+env/
+ENV/
+.venv/
+
+# Arquivos compilados Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribuições
+*.egg-info/
+dist/
+build/
+
+# IDE e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# Arquivos de cache do pytest
+.pytest_cache/
+
+# Cobertura de testes
+htmlcov/
+.coverage
+.coverage.*
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Logs
+*.log
+
+# Arquivos temporários do sistema
+Thumbs.db
+.DS_Store
