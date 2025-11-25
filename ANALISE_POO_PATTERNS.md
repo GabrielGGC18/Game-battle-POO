@@ -1,6 +1,6 @@
-# 📚 Análise de Conceitos POO e Padrões de Projeto
+#  Análise de Conceitos POO e Padrões de Projeto
 
-## ✅ Conceitos Fundamentais de POO Implementados
+##  Conceitos Fundamentais de POO Implementados
 
 ### 1. **HERANÇA DE CLASSE** ✓
 ```python
@@ -104,7 +104,7 @@ class Character(ABC):
 
 ---
 
-## 🎨 Padrões de Projeto Implementados
+##  Padrões de Projeto Implementados
 
 ### 1. **SINGLETON** ✓
 **Arquivo**: `game_manager.py`
@@ -258,7 +258,7 @@ def start_game():
 
 ---
 
-## 📊 Diagrama de Relacionamentos
+##  Diagrama de Relacionamentos
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -309,7 +309,7 @@ def start_game():
 
 ---
 
-## 📋 Resumo de Conformidade
+##  Resumo de Conformidade
 
 | Conceito/Padrão | Status | Arquivo | Descrição |
 |---|---|---|---|
@@ -327,7 +327,7 @@ def start_game():
 
 ---
 
-## 🎯 Conclusão
+##  Conclusão
 
 ✅ **SIM, o código mantém TODOS os conceitos de POO e padrões de projeto solicitados:**
 
