@@ -179,7 +179,7 @@ conda env update -f environment.yml
 
 ---
 
-## 🎨 Padrões de Projeto Implementados
+##  Padrões de Projeto Implementados
 
 ✅ **Singleton** - GameManager (uma única instância)  
 ✅ **Factory** - CharacterFactory (criação centralizada)  
@@ -208,6 +208,6 @@ Projeto de aplicação de conceitos de POO e Padrões de Projeto
 
 ##  Documentação Adicional
 
-- 📄 [ANALISE_POO_PATTERNS.md](ANALISE_POO_PATTERNS.md) - Análise detalhada de cada padrão
-- 📄 [FLUXO_EXECUCAO_PATTERNS.md](FLUXO_EXECUCAO_PATTERNS.md) - Como os padrões funcionam em execução
+-  [ANALISE_POO_PATTERNS.md](ANALISE_POO_PATTERNS.md) - Análise detalhada de cada padrão
+-  [FLUXO_EXECUCAO_PATTERNS.md](FLUXO_EXECUCAO_PATTERNS.md) - Como os padrões funcionam em execução
 
