@@ -1,6 +1,6 @@
-# 🎮 Jogo do Gabriel - Guia de Instalação e Execução
+#  Battle Simulator - Guia de Instalação e Execução
 
-## 📋 Requisitos do Sistema
+##  Requisitos do Sistema
 
 - Python 3.10+ (ou conda/miniconda instalado)
 - pip (gerenciador de pacotes Python)
@@ -8,7 +8,7 @@
 
 ---
 
-## 🚀 Instalação das Dependências
+##  Instalação das Dependências
 
 ### **Opção 1: Com pip e venv (Recomendado)**
 
@@ -61,7 +61,7 @@ conda activate poo-jogo-gabriel
 
 ---
 
-## 📦 Dependências do Projeto
+## Dependências do Projeto
 
 | Pacote | Versão | Propósito |
 |--------|--------|----------|
@@ -71,7 +71,7 @@ conda activate poo-jogo-gabriel
 
 ---
 
-## ▶️ Como Executar o Jogo
+##  Como Executar o Jogo
 
 ### **Com ambiente virtual pip:**
 ```bash
@@ -87,7 +87,7 @@ python main.py
 
 ---
 
-## 🎮 Controles do Jogo
+## Controles do Jogo
 
 ### **Goku** (Esquerda)
 - ⬆️ **Seta para Cima** - Se move para cima
@@ -109,7 +109,7 @@ python main.py
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 POO-Aulas-Aplica-o/
@@ -134,7 +134,7 @@ POO-Aulas-Aplica-o/
 
 ---
 
-## 🐛 Solução de Problemas
+##  Solução de Problemas
 
 ### Erro: `ModuleNotFoundError: No module named 'pygame'`
 **Solução com pip:**
@@ -170,7 +170,7 @@ conda env update -f environment.yml
 
 ---
 
-## 🎓 Conceitos de POO Implementados
+##  Conceitos de POO Implementados
 
 ✅ **Herança** - Goku e Naruto herdam de Character  
 ✅ **Polimorfismo** - special_move() implementado diferente  
@@ -190,7 +190,7 @@ conda env update -f environment.yml
 
 ---
 
-## 📝 Notas Importantes
+##  Notas Importantes
 
 - O jogo roda a **60 FPS** para melhor performance
 - O movimento é limitado à tela de 800x369 pixels
@@ -199,14 +199,14 @@ conda env update -f environment.yml
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
-**Gabriel Gomes Cardoso**  
+**Gabriel De Sá Mendes**  
 Projeto de aplicação de conceitos de POO e Padrões de Projeto
 
 ---
 
-## 📚 Documentação Adicional
+##  Documentação Adicional
 
 - 📄 [ANALISE_POO_PATTERNS.md](ANALISE_POO_PATTERNS.md) - Análise detalhada de cada padrão
 - 📄 [FLUXO_EXECUCAO_PATTERNS.md](FLUXO_EXECUCAO_PATTERNS.md) - Como os padrões funcionam em execução

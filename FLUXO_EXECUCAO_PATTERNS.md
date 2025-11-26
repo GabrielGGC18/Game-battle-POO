@@ -1,6 +1,6 @@
-# 🔄 Fluxo de Execução - Padrões de Projeto em Ação
+#  Fluxo de Execução - Padrões de Projeto em Ação
 
-## 1️⃣ SINGLETON - Garantindo Uma Única Instância
+## 1️ SINGLETON - Garantindo Uma Única Instância
 
 ```
 main.py
@@ -18,11 +18,11 @@ main.py
   └─ self.manager.stop()  ◄─── Sempre a mesma instância!
 ```
 
-**Resultado**: Há apenas um GameManager em toda a aplicação ✅
+**Resultado**: Há apenas um GameManager em toda a aplicação 
 
 ---
 
-## 2️⃣ FACTORY - Criação Centralizada de Personagens
+## 2️ FACTORY - Criação Centralizada de Personagens
 
 ```
 GameFacade.__init__()
@@ -52,11 +52,11 @@ GameFacade.__init__()
           )
 ```
 
-**Vantagem**: Adicionar novo personagem não requer mudança no GameFacade ✅
+**Vantagem**: Adicionar novo personagem não requer mudança no GameFacade 
 
 ---
 
-## 3️⃣ STRATEGY - Delegação de Algoritmos
+## 3️ STRATEGY - Delegação de Algoritmos
 
 ```
 Character (Abstrata)
@@ -89,11 +89,11 @@ self.naruto_x, self.naruto_y = self.naruto.move(...)
 # Resultado: y -= 20
 ```
 
-**Vantagem**: Trocar estratégia em runtime sem alterar a classe ✅
+**Vantagem**: Trocar estratégia em runtime sem alterar a classe 
 
 ---
 
-## 4️⃣ OBSERVER - Sistema de Eventos
+## 4️ OBSERVER - Sistema de Eventos
 
 ```
 GameFacade.__init__()
@@ -131,11 +131,11 @@ Durante o jogo (quando ataque especial acontece):
 3. Cada observador reage independentemente
 4. Fácil adicionar novos observadores sem modificar GameEvent
 
-**Vantagem**: Desacoplamento entre eventos e reações ✅
+**Vantagem**: Desacoplamento entre eventos e reações 
 
 ---
 
-## 5️⃣ ABSTRACT & POLIMORFISMO
+## 5️ ABSTRACT & POLIMORFISMO
 
 ```
 ┌─────────────────────────────────┐
@@ -171,11 +171,11 @@ Naruto.special_move():
      └─ Inflige 15 de dano
 ```
 
-**Resultado**: Mesmo tipo (Character), comportamentos diferentes ✅
+**Resultado**: Mesmo tipo (Character), comportamentos diferentes 
 
 ---
 
-## 6️⃣ FACADE - Orquestração Complexa
+## 6️ FACADE - Orquestração Complexa
 
 ```
 main.py (Cliente simples)
@@ -208,11 +208,11 @@ DEPOIS (com Facade):
   game.run()
 ```
 
-**Vantagem**: Main.py é simples e limpo ✅
+**Vantagem**: Main.py é simples e limpo 
 
 ---
 
-## 7️⃣ COMPOSIÇÃO SOBRE HERANÇA
+## 7️ COMPOSIÇÃO SOBRE HERANÇA
 
 ```
 Character
@@ -231,7 +231,7 @@ Character
 
 ---
 
-## 📈 Benefícios Alcançados
+##  Benefícios Alcançados
 
 | Padrão | Benefício |
 |--------|-----------|
@@ -245,7 +245,7 @@ Character
 
 ---
 
-## 🎯 Exemplo Completo de Execução
+##  Exemplo Completo de Execução
 
 ```python
 # 1. Main inicia
@@ -284,7 +284,7 @@ return  # Saída graceful
 
 ---
 
-## ✨ Conclusão
+##  Conclusão
 
 O código implementa **6 padrões de projeto** trabalhando juntos:
 
@@ -304,5 +304,5 @@ Main
        └─► Composição ──────────┘
 ```
 
-**Resultado**: Código **flexível**, **manutenível** e **extensível** ✅
+**Resultado**: Código **flexível**, **manutenível** e **extensível** 
 
